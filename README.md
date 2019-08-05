@@ -1,0 +1,2 @@
+# katas
+ riddles from codewars
