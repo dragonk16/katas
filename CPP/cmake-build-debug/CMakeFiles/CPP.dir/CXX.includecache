@@ -7,14 +7,20 @@
 #IncludeRegexTransform: 
 
 D:/github/katas/katas/CPP/DirectionsReduction.cpp
-assert.h
--
 Katas.hpp
 D:/github/katas/katas/CPP/Katas.hpp
-List
--
 
 D:/github/katas/katas/CPP/Katas.hpp
+iostream
+-
+intrin.h
+-
+cmath
+-
+vector
+-
+
+D:/github/katas/katas/CPP/main.cpp
 iostream
 -
 intrin.h
@@ -25,4 +31,6 @@ cmath
 -
 vector
 -
+Katas.hpp
+D:/github/katas/katas/CPP/Katas.hpp
 

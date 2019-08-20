@@ -6,7 +6,6 @@
 #define CPP_KATAS_HPP
 #include <iostream>
 #include <intrin.h>
-#include <list>
 #include <cmath>
 #include <vector>
 
@@ -17,13 +16,11 @@ using namespace std;
 class DirReduction
 {
 public:
-        static vector<char>* StringToChar(vector<string> &str);
-        static vector<string>* CharToString(vector<char> &str);
+        static int nextValid(vector<bool> valid,int index);
+        static int previousValid(vector<bool> valid,int index);
         static vector<string> dirReduc(vector<string> &arr);
-        int test();
+        int test();///sample tests
 };
-
-
 
 
 #endif //CPP_KATAS_HPP
