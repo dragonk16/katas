@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/github/katas/katas/CPP/DirectionsReduction.cpp
+assert.h
+-
+Katas.hpp
+D:/github/katas/katas/CPP/Katas.hpp
+List
+-
+
+D:/github/katas/katas/CPP/Katas.hpp
+iostream
+-
+intrin.h
+-
+list
+-
+cmath
+-
+vector
+-
+

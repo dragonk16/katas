@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/github/katas/katas/CPP/DirectionsReduction.cpp">
+			<Option target="CPP"/>
+		</Unit>
+		<Unit filename="D:/github/katas/katas/CPP/Katas.hpp">
+			<Option target="CPP"/>
+		</Unit>
 		<Unit filename="D:/github/katas/katas/CPP/main.cpp">
 			<Option target="CPP"/>
 		</Unit>

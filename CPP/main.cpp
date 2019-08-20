@@ -3,6 +3,8 @@
 #include <list>
 #include <cmath>
 #include <vector>
+#include "Katas.hpp"
+
 
 using namespace std;
 
@@ -118,7 +120,7 @@ std::string PrimeDecomp::factors(int lst) {
     return str;
 }
 */
-
+/*
 class BestTravel
 {
 public:
@@ -140,7 +142,7 @@ public:
         return sum;
     }
 };
-
+*//*
 static int chooseBestSum(int kilometers, int towns, std::vector<int>& ls) {
     int sum=0;
     if(towns==1){
@@ -155,9 +157,10 @@ static int chooseBestSum(int kilometers, int towns, std::vector<int>& ls) {
 
 
 }
-int main(){
-    std::vector<int> ts = {50, 55, 56, 57, 58};
-    int n = BestTravel::chooseBestSum(163, 3, ts);
-    cout<<n<<":163"<<endl;
+ */
+int main() {
+    DirReduction RED;
+    RED.test();
+
 
 }

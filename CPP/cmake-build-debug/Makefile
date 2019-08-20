@@ -122,6 +122,33 @@ CPP/fast:
 	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/build
 .PHONY : CPP/fast
 
+DirectionsReduction.obj: DirectionsReduction.cpp.obj
+
+.PHONY : DirectionsReduction.obj
+
+# target to build an object file
+DirectionsReduction.cpp.obj:
+	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/DirectionsReduction.cpp.obj
+.PHONY : DirectionsReduction.cpp.obj
+
+DirectionsReduction.i: DirectionsReduction.cpp.i
+
+.PHONY : DirectionsReduction.i
+
+# target to preprocess a source file
+DirectionsReduction.cpp.i:
+	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/DirectionsReduction.cpp.i
+.PHONY : DirectionsReduction.cpp.i
+
+DirectionsReduction.s: DirectionsReduction.cpp.s
+
+.PHONY : DirectionsReduction.s
+
+# target to generate assembly for a file
+DirectionsReduction.cpp.s:
+	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/DirectionsReduction.cpp.s
+.PHONY : DirectionsReduction.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... CPP
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... DirectionsReduction.obj
+	@echo ... DirectionsReduction.i
+	@echo ... DirectionsReduction.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
