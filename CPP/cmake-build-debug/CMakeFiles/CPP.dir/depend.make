@@ -4,6 +4,9 @@
 CMakeFiles/CPP.dir/DirectionsReduction.cpp.obj: ../DirectionsReduction.cpp
 CMakeFiles/CPP.dir/DirectionsReduction.cpp.obj: ../Katas.hpp
 
+CMakeFiles/CPP.dir/Valid_Braces.cpp.obj: ../Valid\ Braces.cpp
+CMakeFiles/CPP.dir/Valid_Braces.cpp.obj: ../katas.hpp
+
 CMakeFiles/CPP.dir/main.cpp.obj: ../Katas.hpp
 CMakeFiles/CPP.dir/main.cpp.obj: ../main.cpp
 

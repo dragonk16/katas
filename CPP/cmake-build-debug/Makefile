@@ -149,6 +149,33 @@ DirectionsReduction.cpp.s:
 	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/DirectionsReduction.cpp.s
 .PHONY : DirectionsReduction.cpp.s
 
+Valid_Braces.obj: Valid_Braces.cpp.obj
+
+.PHONY : Valid_Braces.obj
+
+# target to build an object file
+Valid_Braces.cpp.obj:
+	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/Valid_Braces.cpp.obj
+.PHONY : Valid_Braces.cpp.obj
+
+Valid_Braces.i: Valid_Braces.cpp.i
+
+.PHONY : Valid_Braces.i
+
+# target to preprocess a source file
+Valid_Braces.cpp.i:
+	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/Valid_Braces.cpp.i
+.PHONY : Valid_Braces.cpp.i
+
+Valid_Braces.s: Valid_Braces.cpp.s
+
+.PHONY : Valid_Braces.s
+
+# target to generate assembly for a file
+Valid_Braces.cpp.s:
+	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/Valid_Braces.cpp.s
+.PHONY : Valid_Braces.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -188,6 +215,9 @@ help:
 	@echo ... DirectionsReduction.obj
 	@echo ... DirectionsReduction.i
 	@echo ... DirectionsReduction.s
+	@echo ... Valid_Braces.obj
+	@echo ... Valid_Braces.i
+	@echo ... Valid_Braces.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -159,8 +159,7 @@ static int chooseBestSum(int kilometers, int towns, std::vector<int>& ls) {
 }
  */
 int main() {
-    DirReduction RED;
-    RED.test();
-
+    ValidBraces x;
+    x.test();
 
 }

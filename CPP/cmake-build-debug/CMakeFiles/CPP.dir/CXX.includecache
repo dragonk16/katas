@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-D:/github/katas/katas/CPP/DirectionsReduction.cpp
-Katas.hpp
-D:/github/katas/katas/CPP/Katas.hpp
+D:/github/katas/katas/CPP/Valid Braces.cpp
+katas.hpp
+D:/github/katas/katas/CPP/katas.hpp
 
-D:/github/katas/katas/CPP/Katas.hpp
+D:/github/katas/katas/CPP/katas.hpp
 iostream
 -
 intrin.h
@@ -19,18 +19,4 @@ cmath
 -
 vector
 -
-
-D:/github/katas/katas/CPP/main.cpp
-iostream
--
-intrin.h
--
-list
--
-cmath
--
-vector
--
-Katas.hpp
-D:/github/katas/katas/CPP/Katas.hpp
 

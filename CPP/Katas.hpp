@@ -22,5 +22,9 @@ public:
         int test();///sample tests
 };
 
-
+class ValidBraces {
+public:
+    static bool valid_braces(std::string braces);
+    int test();///sample tests
+};
 #endif //CPP_KATAS_HPP
