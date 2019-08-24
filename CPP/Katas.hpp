@@ -24,10 +24,7 @@ public:
         static vector<string> dirReduc(vector<string> &arr);
         int test();///sample tests
 };
-<<<<<<< Updated upstream
 
-
-=======
 /**
  * https://www.codewars.com/kata/5277c8a221e209d3f6000b56
  */
@@ -41,9 +38,9 @@ public:
  */
  class PathFinderPart1{
  public:
-
+    bool test(int x);
    //  bool path(string maze,int *location,int n);
      bool path_finder(string maze);
  };
->>>>>>> Stashed changes
+
 #endif //CPP_KATAS_HPP

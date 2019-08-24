@@ -3,19 +3,63 @@
 //
 
 #include "katas.hpp"
-
+#include <assert.h>
 // TODO: Determine whether one can reach the exit at (n - 1, n - 1)
 // starting from (0, 0) in a n × n maze (represented as a string)
 // and return a boolean value accordingly
 
+bool PathFinderPart1::test(int x) {
+    int y = 0;
+    /*
+      Maze:
+        .W.
+        .W.
+        ...
+    */
+    if (path_finder(".W.\n.W.\n...") == true) {
+        y++;
+    }
+    /*
+      Maze:
+        .W.
+        .W.
+        W..
+    */
+    if(path_finder(".W.\n.W.\nW..") == (false))
+    y++;
+    /*
+      Maze:
+        ......
+        ......
+        ......
+        ......
+        ......
+        ......
+    */
+    if(path_finder("......\n......\n......\n......\n......\n......") == (true))
+        y++;
+    /*
+      Maze:
+        ......
+        ......
+        ......
+        ......
+        .....W
+        ....W.
+    */
+    if(path_finder("......\n......\n......\n......\n.....W\n....W.") == (false))
+        y++;
+
+    x=y;
+}
 ///Wall is 1
 /// path is 0
 bool* string2Matrix(string maze, int colsize) {
-    auto matrix = new bool[colsize * colsize];
+    bool* matrix = new bool[colsize * colsize];
     int row = 0;
     int col = 0;
     for (auto i:maze) {///filling the matrix, 1 for wall, 0 for path
-        if (i == '/n') {
+        if (i == '\n') {
             row++;
             col = 0;
         } else {
@@ -50,9 +94,10 @@ bool PathFinderPart1::path_finder(string maze) {
     if (maze.empty()) {
         return true;
     }
-    auto matrix = string2Matrix(maze, sqrt(maze.size()));
-    bool ret=path(matrix,0,0,(int)sqrt(maze.size()));
-delete(matrix);
+    bool* matrix = string2Matrix(maze, sqrt(maze.size()));
+   bool ret=path(matrix,0,0,(int)sqrt(maze.size()));
+  //  delete(matrix);
+//    bool ret =true;
     return ret;
 }
 

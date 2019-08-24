@@ -160,11 +160,7 @@ static int chooseBestSum(int kilometers, int towns, std::vector<int>& ls) {
 }
  */
 int main() {
-<<<<<<< Updated upstream
-    DirReduction RED;
-    RED.test();
-=======
->>>>>>> Stashed changes
 
-
+PathFinderPart1 x;
+x.test(5);
 }

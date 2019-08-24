@@ -88,6 +88,9 @@
 		<Unit filename="D:/github/katas/katas/CPP/Katas.hpp">
 			<Option target="CPP"/>
 		</Unit>
+		<Unit filename="D:/github/katas/katas/CPP/Valid Braces.cpp">
+			<Option target="CPP"/>
+		</Unit>
 		<Unit filename="D:/github/katas/katas/CPP/main.cpp">
 			<Option target="CPP"/>
 		</Unit>

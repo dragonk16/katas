@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-D:/github/katas/katas/CPP/DirectionsReduction.cpp
-Katas.hpp
-D:/github/katas/katas/CPP/Katas.hpp
-<<<<<<< Updated upstream
-=======
-
 D:/github/katas/katas/CPP/Katas.hpp
 iostream
 -
@@ -26,8 +20,39 @@ D:/github/katas/katas/CPP/Valid Braces.cpp
 katas.hpp
 D:/github/katas/katas/CPP/katas.hpp
 >>>>>>> Stashed changes
-
+-
 D:/github/katas/katas/CPP/Katas.hpp
+iostream
+-
+intrin.h
+-
+cmath
+-
+vector
+-
+-
+D:/github/katas/katas/CPP/main.cpp
+iostream
+-
+intrin.h
+-
+list
+-
+cmath
+-
+vector
+-
+Katas.hpp
+D:/github/katas/katas/CPP/Katas.hpp
+-
+<<<<<<< Updated upstream
+=======
+D:/github/katas/katas/CPP/path finder- part1.cpp
+katas.hpp
+D:/github/katas/katas/CPP/katas.hpp
+-
+
+D:/github/katas/katas/CPP/katas.hpp
 iostream
 -
 intrin.h
@@ -51,10 +76,9 @@ vector
 Katas.hpp
 D:/github/katas/katas/CPP/Katas.hpp
 
-<<<<<<< Updated upstream
-=======
 D:/github/katas/katas/CPP/path finder- part1.cpp
 katas.hpp
 D:/github/katas/katas/CPP/katas.hpp
+assert.h
+-
 
->>>>>>> Stashed changes
