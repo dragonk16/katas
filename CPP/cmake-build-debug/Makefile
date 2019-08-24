@@ -176,6 +176,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+path_finder-_part1.obj: path_finder-_part1.cpp.obj
+
+.PHONY : path_finder-_part1.obj
+
+# target to build an object file
+path_finder-_part1.cpp.obj:
+	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/path_finder-_part1.cpp.obj
+.PHONY : path_finder-_part1.cpp.obj
+
+path_finder-_part1.i: path_finder-_part1.cpp.i
+
+.PHONY : path_finder-_part1.i
+
+# target to preprocess a source file
+path_finder-_part1.cpp.i:
+	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/path_finder-_part1.cpp.i
+.PHONY : path_finder-_part1.cpp.i
+
+path_finder-_part1.s: path_finder-_part1.cpp.s
+
+.PHONY : path_finder-_part1.s
+
+# target to generate assembly for a file
+path_finder-_part1.cpp.s:
+	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/path_finder-_part1.cpp.s
+.PHONY : path_finder-_part1.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +218,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... path_finder-_part1.obj
+	@echo ... path_finder-_part1.i
+	@echo ... path_finder-_part1.s
 .PHONY : help
 
 

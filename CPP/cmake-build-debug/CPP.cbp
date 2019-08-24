@@ -91,6 +91,9 @@
 		<Unit filename="D:/github/katas/katas/CPP/main.cpp">
 			<Option target="CPP"/>
 		</Unit>
+		<Unit filename="D:/github/katas/katas/CPP/path finder- part1.cpp">
+			<Option target="CPP"/>
+		</Unit>
 		<Unit filename="D:/github/katas/katas/CPP/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

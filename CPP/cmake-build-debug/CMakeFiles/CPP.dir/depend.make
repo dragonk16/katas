@@ -7,3 +7,6 @@ CMakeFiles/CPP.dir/DirectionsReduction.cpp.obj: ../Katas.hpp
 CMakeFiles/CPP.dir/main.cpp.obj: ../Katas.hpp
 CMakeFiles/CPP.dir/main.cpp.obj: ../main.cpp
 
+CMakeFiles/CPP.dir/path_finder-_part1.cpp.obj: ../katas.hpp
+CMakeFiles/CPP.dir/path_finder-_part1.cpp.obj: ../path\ finder-\ part1.cpp
+

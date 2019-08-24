@@ -142,7 +142,8 @@ public:
         return sum;
     }
 };
-*//*
+*/
+/*
 static int chooseBestSum(int kilometers, int towns, std::vector<int>& ls) {
     int sum=0;
     if(towns==1){
@@ -159,8 +160,11 @@ static int chooseBestSum(int kilometers, int towns, std::vector<int>& ls) {
 }
  */
 int main() {
+<<<<<<< Updated upstream
     DirReduction RED;
     RED.test();
+=======
+>>>>>>> Stashed changes
 
 
 }

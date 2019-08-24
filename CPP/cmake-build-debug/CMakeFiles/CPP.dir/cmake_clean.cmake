@@ -1,6 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CPP.dir/main.cpp.obj"
   "CMakeFiles/CPP.dir/DirectionsReduction.cpp.obj"
+<<<<<<< Updated upstream
+=======
+  "CMakeFiles/CPP.dir/Valid_Braces.cpp.obj"
+  "CMakeFiles/CPP.dir/path_finder-_part1.cpp.obj"
+>>>>>>> Stashed changes
   "CPP.pdb"
   "CPP.exe"
   "CPP.exe.manifest"

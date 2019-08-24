@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/github/katas/katas/CPP/DirectionsReduction.cpp" "D:/github/katas/katas/CPP/cmake-build-debug/CMakeFiles/CPP.dir/DirectionsReduction.cpp.obj"
   "D:/github/katas/katas/CPP/main.cpp" "D:/github/katas/katas/CPP/cmake-build-debug/CMakeFiles/CPP.dir/main.cpp.obj"
+  "D:/github/katas/katas/CPP/path finder- part1.cpp" "D:/github/katas/katas/CPP/cmake-build-debug/CMakeFiles/CPP.dir/path_finder-_part1.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
