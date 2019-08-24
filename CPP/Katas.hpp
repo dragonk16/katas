@@ -37,7 +37,9 @@ public:
  * https://www.codewars.com/kata/path-finder-number-1-can-you-reach-the-exit/train/cpp
  */
  class PathFinderPart1{
- public:
+     bool path(string& maze, int row,int col, int n);
+     bool* string2Matrix(string maze, int colsize);
+         public:
     bool test(int x);
    //  bool path(string maze,int *location,int n);
      bool path_finder(string maze);
