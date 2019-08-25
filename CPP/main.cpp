@@ -161,6 +161,6 @@ static int chooseBestSum(int kilometers, int towns, std::vector<int>& ls) {
  */
 int main() {
 
-PathFinderPart1 x;
-x.test(5);
+PathFinderPart x;
+x.test2();
 }

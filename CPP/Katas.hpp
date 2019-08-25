@@ -34,15 +34,19 @@ public:
     int test();///sample tests
 };
 /**
- * https://www.codewars.com/kata/path-finder-number-1-can-you-reach-the-exit/train/cpp
+ * part1 : https://www.codewars.com/kata/path-finder-number-1-can-you-reach-the-exit/train/cpp
+ * part2 : https://www.codewars.com/kata/path-finder-number-2-shortest-path/train/cpp
  */
- class PathFinderPart1{
-     bool path(string& maze, int row,int col, int n);
-     bool* string2Matrix(string maze, int colsize);
+ class PathFinderPart{
+     bool path(string& maze,int* matrix, int row,int col, int n,int distance);
          public:
-    bool test(int x);
-   //  bool path(string maze,int *location,int n);
-     bool path_finder(string maze);
+    bool test1();
+     bool test2();
+     bool path_finder1(string maze);///part1
+     int path_finder2(string maze); ///part2
  };
+/***
+ */
+
 
 #endif //CPP_KATAS_HPP
