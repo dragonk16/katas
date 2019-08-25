@@ -81,8 +81,7 @@ bool PathFinderPart::test2() {
     assert(path_finder2("......\n......\n......\n......\n.....W\n....W.") == (-1));
 }
 
-///Wall is 1
-/// path is 0
+
 bool PathFinderPart::path(string& maze,int* matrix, int row,int col, int n,int distance) {
     if (row >= n || row < 0 || col >= n || col < 0)   /// making sure we stayed inbounds
         return false;
@@ -96,7 +95,7 @@ bool PathFinderPart::path(string& maze,int* matrix, int row,int col, int n,int d
         if (matrix[row *n + col] <=distance){///already have shorter path
             return false;
         }
-        matrix[row *n + col]=distance;
+        matrix[row *n + col]=distance; ///updating with the current distance
     }
     if (row == (n - 1) && col == (n - 1)) {///checking if we finished
         return true;
@@ -107,7 +106,6 @@ bool PathFinderPart::path(string& maze,int* matrix, int row,int col, int n,int d
     direction[2] = path(maze,matrix, row + 1, col, n, distance + 1);//down
     direction[3] = path(maze,matrix, row - 1, col, n, distance + 1);//up
     return direction[0] || direction[1]|| direction[2] || direction[3];
-
 }
 
 bool PathFinderPart::path_finder1(string maze) {
