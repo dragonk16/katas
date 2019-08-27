@@ -15,6 +15,8 @@ cmath
 -
 vector
 -
+element.hpp
+D:/github/katas/katas/CPP/element.hpp
 
 D:/github/katas/katas/CPP/Valid Braces.cpp
 katas.hpp
@@ -52,6 +54,8 @@ katas.hpp
 D:/github/katas/katas/CPP/katas.hpp
 -
 
+D:/github/katas/katas/CPP/element.hpp
+
 D:/github/katas/katas/CPP/katas.hpp
 iostream
 -
@@ -61,6 +65,8 @@ cmath
 -
 vector
 -
+element.hpp
+D:/github/katas/katas/CPP/element.hpp
 
 D:/github/katas/katas/CPP/main.cpp
 iostream
@@ -75,10 +81,16 @@ vector
 -
 Katas.hpp
 D:/github/katas/katas/CPP/Katas.hpp
+queue
+-
 
 D:/github/katas/katas/CPP/path finder- part1.cpp
+queue
+-
 katas.hpp
 D:/github/katas/katas/CPP/katas.hpp
 assert.h
 -
+element.hpp
+D:/github/katas/katas/CPP/element.hpp
 

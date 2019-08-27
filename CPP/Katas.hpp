@@ -8,6 +8,8 @@
 #include <intrin.h>
 #include <cmath>
 #include <vector>
+#include "element.hpp"
+
 
 
 
@@ -38,14 +40,18 @@ public:
  * part2 : https://www.codewars.com/kata/path-finder-number-2-shortest-path/train/cpp
  */
  class PathFinderPart{
+     bool path3(string& maze,int* matrix, int row,int col, int n,int distance,int currentPath,element current);
      bool path(string& maze,int* matrix, int row,int col, int n,int distance);
          public:
     bool test1();
      bool test2();
+     bool test3();
      bool path_finder1(string maze);///part1
      int path_finder2(string maze); ///part2
+     int path_finder3(string maze);
  };
 /***
+ *
  */
 
 
