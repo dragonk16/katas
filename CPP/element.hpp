@@ -22,16 +22,11 @@ public:
     }
 
     bool operator>(const element &y) const{
-        return this->weight < y.weight;
-    }
-
-    bool operator<(const element &y)const {
         return this->weight > y.weight;
     }
-//    friend std::ostream &operator<<(std::ostream &os,const element &x) ;
-    int print() const{
-        std::cout << "row " << row << ": " << "col " << col << ": " << weight <<
-           std::endl;
+
+    bool operator<(const element &y) const {
+        return this->weight < y.weight;
     }
 };
 #endif //CPP_ELEMENT_HPP

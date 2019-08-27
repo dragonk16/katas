@@ -7,9 +7,6 @@
 #include "element.hpp"
 
 
-// TODO: Determine whether one can reach the exit at (n - 1, n - 1)
-// starting from (0, 0) in a n × n maze (represented as a string)
-// and return a boolean value accordingly
 
 bool PathFinderPart::test1() {
     /*
@@ -83,7 +80,6 @@ bool PathFinderPart::test2() {
     */
     assert(path_finder2("......\n......\n......\n......\n.....W\n....W.") == (-1));
 }
-
 bool PathFinderPart::test3() {
     std::string s1 =
 
@@ -149,6 +145,7 @@ bool PathFinderPart::test3() {
 
 
 bool PathFinderPart::path(string& maze,int* matrix, int row,int col, int n,int distance) {
+    enum directions{right,left,down,up};
     if (row >= n || row < 0 || col >= n || col < 0)   /// making sure we stayed inbounds
         return false;
     if (maze[row * (n + 1) + col] == 'W') {///checking for walls
@@ -167,35 +164,12 @@ bool PathFinderPart::path(string& maze,int* matrix, int row,int col, int n,int d
         return true;
     }
     bool direction[4];
-    direction[0] = path(maze,matrix, row, col + 1, n, distance + 1);//right
-    direction[1] = path(maze,matrix, row, col - 1, n, distance + 1);//left
-    direction[2] = path(maze,matrix, row + 1, col, n, distance + 1);//down
-    direction[3] = path(maze,matrix, row - 1, col, n, distance + 1);//up
-    return direction[0] || direction[1]|| direction[2] || direction[3];
+    direction[right] = path(maze,matrix, row, col + 1, n, distance + 1);//right
+    direction[left] = path(maze,matrix, row, col - 1, n, distance + 1);//left
+    direction[down] = path(maze,matrix, row + 1, col, n, distance + 1);//down
+    direction[up] = path(maze,matrix, row - 1, col, n, distance + 1);//up
+    return direction[right] || direction[left]|| direction[down] || direction[up];
 }
-
-//bool PathFinderPart::path3(string& maze,int* matrix, int row,int col, int n,int previousElevation,int previuosPath) {
-//    if (row >= n || row < 0 || col >= n || col < 0)   /// making sure we stayed inbounds
-//        return false;
-//    int currentElevation=maze[row * (n + 1) + col]-'0';
-////    int elevationsChange=max(previousElevation-currentElevation,currentElevation-previousElevation);
-//    int elevationsChange=abs(previousElevation-currentElevation);
-//    if (matrix[row *n + col] != -1 && matrix[row *n + col] <= (elevationsChange+previuosPath) ) {///not first visit
-//        // and no need to update
-//            return false;
-//        }
-//    matrix[row *n + col]=elevationsChange+previuosPath; ///updating with the current distance
-//    if (row == (n - 1) && col == (n - 1)) {///checking if we finished
-//        return true;
-//    }
-//    bool direction[4];
-//    direction[0] = path3(maze,matrix, row, col + 1, n, currentElevation, matrix[row *n + col]);//right
-//    direction[1] = path3(maze,matrix, row, col - 1, n, currentElevation, matrix[row *n + col]);//left
-//    direction[2] = path3(maze,matrix, row + 1, col, n, currentElevation, matrix[row *n + col]);//down
-//    direction[3] = path3(maze,matrix, row - 1, col, n, currentElevation, matrix[row *n + col]);//up
-//    return direction[0] || direction[1]|| direction[2] || direction[3];
-//}
-
 bool PathFinderPart::path_finder1(string maze) {
     int n=sqrt(maze.size());
     int distanceMatrix[n*n];
@@ -209,18 +183,6 @@ int PathFinderPart::path_finder2(string maze) {
     }
     return -1;
 }
-//int PathFinderPart::path_finder3(string maze) {
-//    int n=sqrt(maze.size());
-//    int distanceMatrix[n*n];
-//    for (int &i:distanceMatrix){
-//        i=-1;
-//    }
-//    if (path3(maze,distanceMatrix, 0, 0, n,maze[0]-'0',0)==true){
-//        return distanceMatrix[(n*n)-1];
-//    }
-//    return -1;
-//}
-
 
 int PathFinderPart::path_finder3(string maze) {
     int n = sqrt(maze.size());
@@ -229,57 +191,52 @@ int PathFinderPart::path_finder3(string maze) {
         i = -1;
     }
     matrix[0] = 0;
-    std::priority_queue<element> pq;
+    std::priority_queue<element,std::vector<element>,greater<element>> pq;///initialising a min heap
     pq.push(element (0,0,0));
-    int row;
-    int col;
     int currentElevation;
     int nextElevation = 0;
     int elevationsChange = 0;
-    for (element i=pq.top();pq.empty()!=1;i=pq.top()) {
-        pq.pop();
-        i.print();
-
-        row = i.row;
-        col = i.col;
-        currentElevation = maze[row * (n + 1) + col] - '0';
-        int coords[5] = {(row) * n + (col - 1), (row) * n + (col + 1), (row + 1) * n + (col), (row - 1) * n + (col),
-                         (row) * n + (col)};
-        ///0-left,1-right,2-down,3-up,4-current
-        if (col < n - 1) {///going right-1
-            nextElevation = maze[(row) * (n + 1) + (col + 1)] - '0';
+    enum directions{left=0,right,down,up,current};
+    for (element i=pq.top();pq.empty()!=1;i=pq.top(),pq.pop())
+    {
+        currentElevation = maze[i.row * (n + 1) + i.col] - '0';
+        int coords[5] = {(i.row) * n + (i.col - 1), (i.row) * n + (i.col + 1),
+                         (i.row + 1) * n + (i.col), (i.row - 1) * n + (i.col),
+                         (i.row) * n + (i.col)};
+        if (i.col < n - 1) {///going right
+            nextElevation = maze[(i.row) * (n + 1) + (i.col + 1)] - '0';
             elevationsChange = abs(nextElevation - currentElevation);
-            if (matrix[coords[1]] == -1 || matrix[coords[1]] > (elevationsChange + matrix[coords[4]])) {
-                /// first visit or improvment
-                matrix[coords[1]] = elevationsChange + matrix[coords[4]]; ///updating with the current distance
-                pq.push(element(row, col + 1, matrix[coords[1]]));
+            if (matrix[coords[right]] == -1 || matrix[coords[right]] > (elevationsChange + matrix[coords[current]])) {
+                /// first visit or improvement
+                matrix[coords[right]] = elevationsChange + matrix[coords[current]]; ///updating with the current distance
+                pq.push(element(i.row, i.col + 1, matrix[coords[right]]));
             }
         }
-        if (col > 0) {///going left-0
-            nextElevation = maze[(row) * (n + 1) + (col - 1)] - '0';
+        if (i.col > 0) {///going left
+            nextElevation = maze[(i.row) * (n + 1) + (i.col - 1)] - '0';
             elevationsChange = abs(nextElevation - currentElevation);
-            if (matrix[coords[0]] == -1 || matrix[coords[0]] > (elevationsChange + matrix[coords[4]])) {
-                /// first visit or improvment
-                matrix[coords[0]] = elevationsChange + matrix[coords[4]]; ///updating with the current distance
-                pq.push(element(row, col - 1, matrix[coords[0]]));
+            if (matrix[coords[left]] == -1 || matrix[coords[left]] > (elevationsChange + matrix[coords[current]])) {
+                /// first visit or improvement
+                matrix[coords[left]] = elevationsChange + matrix[coords[current]]; ///updating with the current distance
+                pq.push(element(i.row, i.col - 1, matrix[coords[left]]));
             }
         }
-        if (row > 0) {///going up-3
-            nextElevation = maze[(row - 1) * (n + 1) + (col)] - '0';
+        if (i.row > 0) {///going up
+            nextElevation = maze[(i.row - 1) * (n + 1) + (i.col)] - '0';
             elevationsChange = abs(nextElevation - currentElevation);
-            if (matrix[coords[3]] == -1 || matrix[coords[3]] > (elevationsChange + matrix[coords[4]])) {
-                /// first visit or improvment
-                matrix[coords[3]] = elevationsChange + matrix[coords[4]]; ///updating with the current distance
-                pq.push(element(row - 1, col, matrix[coords[3]]));
+            if (matrix[coords[up]] == -1 || matrix[coords[up]] > (elevationsChange + matrix[coords[current]])) {
+                /// first visit or improvement
+                matrix[coords[up]] = elevationsChange + matrix[coords[current]]; ///updating with the current distance
+                pq.push(element(i.row - 1, i.col, matrix[coords[up]]));
             }
         }
-        if (row < n - 1) {///going down-2
-            nextElevation = maze[(row + 1) * (n + 1) + (col)] - '0';
+        if (i.row < n - 1) {///going down
+            nextElevation = maze[(i.row + 1) * (n + 1) + (i.col)] - '0';
             elevationsChange = abs(nextElevation - currentElevation);
-            if (matrix[coords[2]] == -1 || matrix[coords[2]] > (elevationsChange + matrix[coords[4]])) {
-                /// first visit or improvment
-                matrix[coords[2]] = elevationsChange + matrix[coords[4]]; ///updating with the current distance
-                pq.push(element(row + 1, col, matrix[coords[2]]));
+            if (matrix[coords[down]] == -1 || matrix[coords[down]] > (elevationsChange + matrix[coords[current]])) {
+                /// first visit or improvement
+                matrix[coords[down]] = elevationsChange + matrix[coords[current]]; ///updating with the current distance
+                pq.push(element(i.row + 1, i.col, matrix[coords[down]]));
             }
         }
     }

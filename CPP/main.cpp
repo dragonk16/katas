@@ -162,19 +162,8 @@ static int chooseBestSum(int kilometers, int towns, std::vector<int>& ls) {
  */
 int main() {
 
-//PathFinderPart x;
-//x.test3();
-//    std::priority_queue<element> pq;
-    int myints[]= {10,60,50,20};
-    std::priority_queue<int> second;
-    for (auto i:myints) {
-        second.push(i);
-    }
-    for(int i=second.top();second.empty()!=1;i=second.top()){
-        second.pop();
-        cout<<i<<",";
-    }
-    std::priority_queue<int, std::vector<int>, std::greater<int> >
-            third (myints,myints+4);
+PathFinderPart x;
+x.test3();
+
     return 0;
 }

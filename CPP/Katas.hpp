@@ -38,6 +38,7 @@ public:
 /**
  * part1 : https://www.codewars.com/kata/path-finder-number-1-can-you-reach-the-exit/train/cpp
  * part2 : https://www.codewars.com/kata/path-finder-number-2-shortest-path/train/cpp
+ * part3 : https://www.codewars.com/kata/path-finder-number-3-the-alpinist/train/cpp
  */
  class PathFinderPart{
      bool path3(string& maze,int* matrix, int row,int col, int n,int distance,int currentPath,element current);
