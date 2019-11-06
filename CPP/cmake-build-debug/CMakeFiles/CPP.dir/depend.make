@@ -5,12 +5,13 @@ CMakeFiles/CPP.dir/DirectionsReduction.cpp.obj: ../DirectionsReduction.cpp
 CMakeFiles/CPP.dir/DirectionsReduction.cpp.obj: ../Katas.hpp
 CMakeFiles/CPP.dir/DirectionsReduction.cpp.obj: ../element.hpp
 
-CMakeFiles/CPP.dir/Valid_Braces.cpp.obj: ../Katas.hpp
+CMakeFiles/CPP.dir/Matrix_Determinant.cpp.obj: ../Matrix\ Determinant.cpp
+CMakeFiles/CPP.dir/Matrix_Determinant.cpp.obj: ../element.hpp
+CMakeFiles/CPP.dir/Matrix_Determinant.cpp.obj: ../katas.hpp
+
 CMakeFiles/CPP.dir/Valid_Braces.cpp.obj: ../Valid\ Braces.cpp
 CMakeFiles/CPP.dir/Valid_Braces.cpp.obj: ../element.hpp
 CMakeFiles/CPP.dir/Valid_Braces.cpp.obj: ../katas.hpp
-CMakeFiles/CPP.dir/Valid_Braces.cpp.obj: ../main.cpp
-CMakeFiles/CPP.dir/Valid_Braces.cpp.obj: ../path\ finder-\ part1.cpp
 
 CMakeFiles/CPP.dir/main.cpp.obj: ../Katas.hpp
 CMakeFiles/CPP.dir/main.cpp.obj: ../element.hpp

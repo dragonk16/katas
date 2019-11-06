@@ -149,6 +149,33 @@ DirectionsReduction.cpp.s:
 	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/DirectionsReduction.cpp.s
 .PHONY : DirectionsReduction.cpp.s
 
+Matrix_Determinant.obj: Matrix_Determinant.cpp.obj
+
+.PHONY : Matrix_Determinant.obj
+
+# target to build an object file
+Matrix_Determinant.cpp.obj:
+	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/Matrix_Determinant.cpp.obj
+.PHONY : Matrix_Determinant.cpp.obj
+
+Matrix_Determinant.i: Matrix_Determinant.cpp.i
+
+.PHONY : Matrix_Determinant.i
+
+# target to preprocess a source file
+Matrix_Determinant.cpp.i:
+	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/Matrix_Determinant.cpp.i
+.PHONY : Matrix_Determinant.cpp.i
+
+Matrix_Determinant.s: Matrix_Determinant.cpp.s
+
+.PHONY : Matrix_Determinant.s
+
+# target to generate assembly for a file
+Matrix_Determinant.cpp.s:
+	$(MAKE) -f CMakeFiles\CPP.dir\build.make CMakeFiles/CPP.dir/Matrix_Determinant.cpp.s
+.PHONY : Matrix_Determinant.cpp.s
+
 Valid_Braces.obj: Valid_Braces.cpp.obj
 
 .PHONY : Valid_Braces.obj
@@ -242,6 +269,9 @@ help:
 	@echo ... DirectionsReduction.obj
 	@echo ... DirectionsReduction.i
 	@echo ... DirectionsReduction.s
+	@echo ... Matrix_Determinant.obj
+	@echo ... Matrix_Determinant.i
+	@echo ... Matrix_Determinant.s
 	@echo ... Valid_Braces.obj
 	@echo ... Valid_Braces.i
 	@echo ... Valid_Braces.s

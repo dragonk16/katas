@@ -13,6 +13,7 @@
 
 
 
+
 using namespace std;
 
 /**
@@ -54,6 +55,12 @@ public:
 /***
  *
  */
+class matrixDeterminant {
+public:
+    bool test1();
+    long long determinant(vector<vector<long long> > m);
+};
+
 
 
 #endif //CPP_KATAS_HPP

@@ -161,9 +161,11 @@ static int chooseBestSum(int kilometers, int towns, std::vector<int>& ls) {
 }
  */
 int main() {
-
-PathFinderPart x;
-x.test3();
-
+    matrixDeterminant x;
+    vector< vector<long long> > m{
+            vector<long long> {1, 3},
+            vector<long long> {2, 5}};
+    long long ds=x.determinant(m);
+    cout<<ds;
     return 0;
 }

@@ -6,53 +6,13 @@
 
 #IncludeRegexTransform: 
 
-D:/github/katas/katas/CPP/Katas.hpp
+D:/github/katas/katas/CPP/Matrix Determinant.cpp
 iostream
--
-intrin.h
--
-cmath
 -
 vector
 -
-element.hpp
-D:/github/katas/katas/CPP/element.hpp
-
-D:/github/katas/katas/CPP/Valid Braces.cpp
 katas.hpp
 D:/github/katas/katas/CPP/katas.hpp
->>>>>>> Stashed changes
--
-D:/github/katas/katas/CPP/Katas.hpp
-iostream
--
-intrin.h
--
-cmath
--
-vector
--
--
-D:/github/katas/katas/CPP/main.cpp
-iostream
--
-intrin.h
--
-list
--
-cmath
--
-vector
--
-Katas.hpp
-D:/github/katas/katas/CPP/Katas.hpp
--
-<<<<<<< Updated upstream
-=======
-D:/github/katas/katas/CPP/path finder- part1.cpp
-katas.hpp
-D:/github/katas/katas/CPP/katas.hpp
--
 
 D:/github/katas/katas/CPP/element.hpp
 
@@ -64,32 +24,6 @@ intrin.h
 cmath
 -
 vector
--
-element.hpp
-D:/github/katas/katas/CPP/element.hpp
-
-D:/github/katas/katas/CPP/main.cpp
-iostream
--
-intrin.h
--
-list
--
-cmath
--
-vector
--
-Katas.hpp
-D:/github/katas/katas/CPP/Katas.hpp
-queue
--
-
-D:/github/katas/katas/CPP/path finder- part1.cpp
-queue
--
-katas.hpp
-D:/github/katas/katas/CPP/katas.hpp
-assert.h
 -
 element.hpp
 D:/github/katas/katas/CPP/element.hpp

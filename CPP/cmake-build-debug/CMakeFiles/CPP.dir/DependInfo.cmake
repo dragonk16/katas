@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/github/katas/katas/CPP/DirectionsReduction.cpp" "D:/github/katas/katas/CPP/cmake-build-debug/CMakeFiles/CPP.dir/DirectionsReduction.cpp.obj"
+  "D:/github/katas/katas/CPP/Matrix Determinant.cpp" "D:/github/katas/katas/CPP/cmake-build-debug/CMakeFiles/CPP.dir/Matrix_Determinant.cpp.obj"
   "D:/github/katas/katas/CPP/Valid Braces.cpp" "D:/github/katas/katas/CPP/cmake-build-debug/CMakeFiles/CPP.dir/Valid_Braces.cpp.obj"
   "D:/github/katas/katas/CPP/main.cpp" "D:/github/katas/katas/CPP/cmake-build-debug/CMakeFiles/CPP.dir/main.cpp.obj"
   "D:/github/katas/katas/CPP/path finder- part1.cpp" "D:/github/katas/katas/CPP/cmake-build-debug/CMakeFiles/CPP.dir/path_finder-_part1.cpp.obj"
